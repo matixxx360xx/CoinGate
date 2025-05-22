@@ -43,15 +43,15 @@ void Map() {
         }
         cout << endl;  
     }
-    if (x == 3 && y == 1 && tablica[1][3] == 'C') {
+    if (x == 3 && y == 1) {
         C += 1;
         tablica[1][3] = '*'; 
         cout << "Zebrane C: " << "Zebrano klucz!" << endl;
     }
-    if (x == 1 && y == 2 && C ==1 ) {
+    if (x == 1 && y == 2 && C == 1) {
         cout << "Gratulacje otworzyles drzwi!" << endl;
     }
-    else {
+    if(C == 0){
         cout << "Zdobadz klucz!" << endl;
     }
     
